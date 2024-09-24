@@ -10,7 +10,7 @@
 ```bash
 pipx path/to/rg_tui-<version>-py3-none-any.whl
 ```
-> See (pipx)[https://github.com/pypa/pipx]
+> See [pipx](https://github.com/pypa/pipx)
 
 ## Usage
 **rg-tui** consists of 3 panes.
