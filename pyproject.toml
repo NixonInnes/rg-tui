@@ -8,6 +8,10 @@ dependencies = [
     "textual>=0.80.1",
 ]
 
+[project.scripts]
+rg_tui = "rg_tui.__entry__:rg_tui"
+rg_tui_inline = "rg_tui.__entry__:rg_tui_inline"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"

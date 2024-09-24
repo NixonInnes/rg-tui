@@ -12,7 +12,7 @@ from textual.widgets import (
     RichLog,
 )
 
-from rg import RipGrep
+from rg_tui.rg import RipGrep
 
 
 class FilteredDirectoryTree(DirectoryTree):
@@ -52,7 +52,7 @@ class MatchListItem(ListItem):
         return list_item
 
 
-class MyApp(App):
+class RgTui(App):
     CSS_PATH = "style.tcss"
     rg: RipGrep | None = None
 
