@@ -15,3 +15,8 @@ rg_tui_inline = "rg_tui.__entry__:rg_tui_inline"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "textual-dev>=1.6.1",
+]

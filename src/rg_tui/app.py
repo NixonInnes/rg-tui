@@ -54,6 +54,7 @@ class MatchListItem(ListItem):
 
 class RgTui(App):
     CSS_PATH = "style.tcss"
+    BINDINGS = [("escape", "exit", "Exit")]
     rg: RipGrep | None = None
 
     def on_mount(self):
@@ -65,6 +66,9 @@ class RgTui(App):
             with Horizontal(id="results"):
                 yield FilteredDirectoryTree(".", id="results-tree")
                 yield ListView(id="results-context")
+
+    def action_exit(self):
+        self.exit()
 
     def on_input_changed(self, event: Input.Changed):
         tree = self.query_one(FilteredDirectoryTree)
@@ -93,5 +97,5 @@ class RgTui(App):
 
 
 if __name__ == "__main__":
-    app = MyApp()
+    app = RgTui()
     app.run(inline=True)
