@@ -1,0 +1,39 @@
+Screen {
+  &:inline {
+    border: none;
+    margin: 0;
+    padding: 0;
+    height: 40vh;
+  }
+}
+
+RichLog {
+  margin: 0;
+  overflow: hidden;
+  
+}
+
+ListView {
+  margin: 0;
+  padding: 0;
+}
+
+ListItem {
+  margin: 0;
+  padding: 1;
+}
+
+#pattern-input {
+  margin: 0;
+}
+
+#results {
+  margin: 0 1;
+}
+
+#results-tree {
+  width: auto;
+  max-width: 33vw;
+  padding: 0 2;
+}
+
